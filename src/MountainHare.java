@@ -1,14 +1,14 @@
 public class MountainHare {
     private int age;
     private double weight;
-    private int jumpLength;
-    private String color;
+    private int  jumpLength;
+    private static String color;
     // добавьте переменные и конструктор
-    public MountainHare(int age,double weight,int jumpLength, String color){
+    public MountainHare(int age,double weight,int  jumpLength){
         this.age = age;
         this.weight = weight;
         this.jumpLength = jumpLength;
-        this.color = color;
+        
     }
     
     public int getAge() {
@@ -35,17 +35,10 @@ public class MountainHare {
         this.jumpLength = jumpLength;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
+  
     @Override
     public String toString() {
-        return "«а€ц-бел€к:цвет бклое " +
+        return "«Заяц-беляк: " +
             "age=" + age +
             ", weight=" + weight +
             ", jumpLength=" + jumpLength +
